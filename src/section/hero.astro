@@ -4,7 +4,7 @@ import DefaultLayout from "../layouts/Default.astro";
 
 <DefaultLayout>
   <section>
-    <article class="container mx-auto px-6 lg:px-0 py-24 text-center">
+    <article class="container mx-auto px-6 lg:px-12 py-24 text-center">
       <h1 class="mb-4 text-6xl font-extrabold">
         <span
           class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500"
@@ -15,20 +15,30 @@ import DefaultLayout from "../layouts/Default.astro";
           >Tailwind</span
         >
       </h1>
-      <p class="mb-8">
+      <p class="mb-8 text-2xl text-slate-500">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim sit
-        tenetur nam magnam obcaecati reiciendis?
+        tenetur nam magnam ?
       </p>
-      <a href="#" class="inline-block mb-32">get the course</a>
+      <a
+        href="#"
+        class="inline-block mb-32 py-4 px-12 rounded bg-gradient-to-br from-purple-500 to-purple-700 text-purple-50 font-bold shadow transition duration-400 hover:to-purple-600 hover:shadow-2xl hover:text-white"
+        >Pre-order available - Get the Course</a
+      >
 
       <div class="relative">
-        <img src="./images/wysbBMS.png" alt="teaser image" />
+        <img
+          src="./images/wysbBMS.png"
+          alt="teaser image"
+          class="rounded-lg border-2 shadow-2xl border-purple-400"
+        />
 
         <div
-          class="absolute top-0 right-0 transform translate-x-4 -translate-y-4 bg-yellow-100"
+          class="absolute top-0 right-0 transform translate-x-4 -translate-y-4 bg-yellow-100 text-left py-4 px-8 border-t-4 border-yellow-400 rounded shadow-lg"
         >
-          <p>We`ll create BeginnerTailwind.com</p>
-          <p>All without a single line of custom CSS</p>
+          <p class="text-yellow-800 font-bold">
+            We`ll create BeginnerTailwind.com
+          </p>
+          <p class="text-yellow-700">All without a single line of custom CSS</p>
         </div>
       </div>
     </article>
