@@ -7,11 +7,18 @@ import DefaultLayout from "../layouts/Default.astro";
 
   <!-- left nav -->
 
-  <div class="text-gray-600">
+  <section class="text-gray-600">
     <nav class="container mx-auto flex justify-between px-6 lg:px-0 py-6">
-      <div class="space-x-4 grid items-center md:flex lg:flex">
+      <div class="space-x-4 grid items-center lg:flex md:ml-20 ml-0 lg:ml-20">
         <a href="#" class="font-bold text-2xl text-teal-700"
-          >Sascha Schmittinger</a
+          ><span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-teal-500"
+            >Sascha</span
+          >
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-purple-600 to-purple-500"
+            >Schmittinger</span
+          ></a
         >
         <a href="#" class="hover:text-gray-900">About</a>
         <a href="#" class="hover:text-gray-900">What you learn</a>
@@ -20,7 +27,7 @@ import DefaultLayout from "../layouts/Default.astro";
       </div>
 
       <!-- right nav -->
-      <div class="space-x-4">
+      <div class="space-x-4 md:mr-20 lg:mr-20 mr-0">
         <a href="#" class="hover:text-gray-900">Login</a>
         <a
           href="#"
@@ -30,5 +37,5 @@ import DefaultLayout from "../layouts/Default.astro";
         >
       </div>
     </nav>
-  </div>
+  </section>
 </DefaultLayout>
